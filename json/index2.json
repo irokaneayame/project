@@ -1,0 +1,38 @@
+{
+	"left": "images/21619_258_425_001-web.jpg",
+	"right": [
+		{
+			"img": "images/166728_380_205_002-web.jpg",
+			"title1":"水密码品牌专场",
+			"title2":"水漾脱变 即刻起航",
+			"price":{
+				"price1":199,
+				"price2":100
+			}
+		},{
+			"img": "images/166726_380_205_002-web.jpg",
+			"title1":"瓷肌品牌团专场",
+			"title2":"秋冬颜值 拼的是水润",
+			"price":{
+				"price1":109,
+				"price2":30
+			}
+		},{
+			"img": "images/166724_380_205_001-web.jpg",
+			"title1":"御泥坊品牌专场",
+			"title2":"圣诞献礼狂欢",
+			"price":{
+				"price1":199,
+				"price2":80
+			}
+		},{
+			"img": "images/166722_380_205_002-web.jpg",
+			"title1":"玛丽黛佳品牌团",
+			"title2":"新艺术彩妆品牌领导者",
+			"price":{
+				"price1":109,
+				"price2":30
+			}
+		}
+	]
+}
