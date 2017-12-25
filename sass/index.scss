@@ -1,382 +1,11 @@
 $font-size:12px;
 $width: 1090px;
 $color:#ed145b;
-header {
-    height: 28px;
-    border-bottom: 1px solid #e5e5e5;
-    background: #f2f2f2;
-    font-size: $font-size;
-    color: #6c6c6c;
-    line-height: 28px;
-    div {
-        width: $width;
-        margin: 0 auto;
-        height: 100%;
-        p {
-            float: left;
-            span {
-                cursor: pointer;
-                margin: 0 10px;
-                &:hover {
-                    color: $color;
-                }
-            }
-        }
-        #nav {
-            float: right;
-            height: 28px;
-            >li {
-                float: left;
-                height: 28px;
-                margin: 0 7px;
-                a {
-                    color: #999999;
-                    &:hover {
-                        color: $color;
-                    }
-                    float: left;
-                }
-                .iconfont {
-                    float: left;
-                    font-size: 14px;
-                    display: inline-block;
-                    vertical-align: middle;
-                }
-                b {
-                    display: inline-block;
-                    width: 6px;
-                    height: 3px;
-                    background: url(../images/header_newicon1.png);
-                    margin: 12px 6px 0 6px;
-                    float: right;
-                    transition: all 0.3s;
-                }
-                i {
-                    float: left;
-                    display: inline-block;
-                    margin-right: 5px;
-                }
-                &:nth-of-type(3) {
-                    i {
-                        margin-top: 11px;
-                        width: 9px;
-                        height: 8px;
-                        background: url(../images/header_sprites1.png);
-                    }
-                }
-                &:nth-of-type(5) {
-                    i {
-                        margin-top: 8px;
-                        width: 10px;
-                        height: 14px;
-                        background: url(../images/header_sprites1.png) 0 -21px;
-                    }
-                    border-left: 1px solid #ddd;
-                    border-right: 1px solid #ddd;
-                    padding: 0 12px;
-                    a {
-                        color: $color;
-                    }
-                }
-                &:nth-of-type(4) {
-                    width: 76px;
-                }
-                &:nth-last-of-type(1) {
-                    width: 60px;
-                }
-                ul {
-                    display: none;
-                    position: absolute;
-                    top: 29px;
-                    right: -1px;
-                    background: #fff;
-                    z-index: 1;
-                    width: 110px;
-                    border: 1px solid #e5e5e5;
-                    border-top: 0;
-                    li {
-                        height: 29px;
-                        width: 110px;
-                        text-indent: 20px;
-                    }
-                }
-            }
-            .xiala {
-                position: relative;
-                >a {
-                    float: right;
-                }
-                &:hover {
-                    b {
-                        transform-origin: center;
-                        transform: rotateZ(180deg);
-                    }
-                    background: #fff;
-                    height: 40px;
-                    border-bottom: 1px solid #fff;
-                }
-            }
-        }
-    }
-}
-
-#top {
-    height: 110px;
-    width: $width;
-    margin: 0 auto;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    h1 {
-        margin-top: 13px;
-    }
-    form {
-        margin-top: 28px;
-        input {
-            float: left;
-        }
-        #txt {
-            width: 433px;
-            height: 32px;
-            border: 3px solid $color;
-        }
-        #btn {
-            border: 0;
-            width: 97px;
-            height: 38px;
-            background: $color;
-            color: #fff;
-            cursor: pointer;
-        }
-        p {
-            line-height: 30px;
-            color: #999;
-            a {
-                &:first-child {
-                    padding-left: 0;
-                }
-                &:last-child {
-                    border-right: 0;
-                }
-                color: #999;
-                padding: 0 8px 0 4px;
-                border-right: 1px solid #999;
-                &:hover {
-                    color: $color;
-                }
-            }
-        }
-    }
-    #cart {
-        margin-top: 33px;
-        position: relative;
-        width: 138px;
-        height: 32px;
-        border: 1px solid #e4e4e4;
-        i {
-            display: inline-block;
-            vertical-align: middle;
-            width: 46px;
-            height: 32px;
-            background: #fff url(../images/cart.gif)no-repeat 10px 0;
-        }
-        span {
-            display: inline-block;
-            vertical-align: middle;
-        }
-        b {
-            display: inline-block;
-            vertical-align: middle;
-            width: 6px;
-            height: 3px;
-            background: url(../images/header_newicon1.png);
-            transition: all 0.3s;
-        }
-        div {
-            &:first-child {
-                width: 138px;
-                height: 32px;
-                background: #f8f8f8;
-                color: #666;
-                position: absolute;
-                border-bottom: 1px solid #e4e4e4;
-            }
-            &:last-child {
-                width: 300px;
-                height: 82px;
-                background: #fff;
-                border: 1px solid #e4e4e4;
-                position: absolute;
-                right: -1px;
-                top: 32px;
-                display: none;
-            }
-        }
-        &:hover {
-            padding-bottom: 1px;
-            border-bottom: 0;
-            b {
-                transform-origin: center;
-                transform: rotateZ(180deg);
-            }
-            div {
-                &:first-child {
-                    border-bottom-color: #fff;
-                    background: #fff;
-                    z-index: 2;
-                }
-                &:last-child {
-                    display: block;
-                    z-index: 1;
-                }
-            }
-        }
-    }
-}
-
 nav {
-    height: 38px;
-    background: #171717;
-    font-size: 12px;
     >div {
-        width: $width;
-        margin: 0 auto;
-        position: relative;
         >ul {
-            float: left;
-            position: relative;
-            >li {
-                float: left;
-                &:first-child {
-                    background: $color;
-                    padding: 0 40px;
-                }
-                >div {
-                    &:first-child {
-                        line-height: 38px;
-                        text-align: center;
-                        padding: 0 22px;
-                        cursor: pointer;
-                        a {
-                            color: #fff;
-                        }
-                        b {
-                            display: inline-block;
-                            vertical-align: middle;
-                            width: 6px;
-                            height: 3px;
-                            background: url(../images/header_newicon1.png);
-                            transition: all 0.3s;
-                        }
-                        &:hover {
-                            a {
-                                color: #ccc;
-                            }
-                            b {
-                                transform-origin: center;
-                                transform: rotateZ(180deg);
-                            }
-                        }
-                    }
-                }
-                .list {
-                    width: 1190px;
-                    height: 308px;
-                    background: #fff;
-                    position: absolute;
-                    z-index: 1;
-                    left: 0;
-                    top: 38px;
-                    display: none;
-                    text-align: left;
-                    .left {
-                        width: 273px;
-                        float: left;
-                        img {
-                            margin: 10px 0 0 10px;
-                        }
-                    }
-                    .right {
-                        width: 789px;
-                        float: left;
-                        padding-top: 10px;
-                        figure {
-                            width: 262px;
-                            height: 136px;
-                            border-right: 1px #e4e4e4 dashed;
-                            border-bottom: 1px #e4e4e4 dashed;
-                            float: left;
-                            figcaption {
-                                line-height: 0;
-                                line-height: 50px;
-                                font-size: 16px;
-                                background: url(../images/header_sprites1.png) no-repeat 19px 0;
-                                text-indent: 47px;
-                            }
-                            &:first-child {
-                                figcaption {
-                                    background-position-y: -428px;
-                                }
-                            }
-                            &:nth-child(2) {
-                                figcaption {
-                                    background-position-y: -206px;
-                                }
-                            }
-                            &:nth-child(3) {
-                                border-right: 0;
-                                figcaption {
-                                    background-position-y: -243px;
-                                }
-                            }
-                            &:nth-child(4) {
-                                border-bottom: 0;
-                                figcaption {
-                                    background-position-y: -315px;
-                                }
-                            }
-                            &:nth-child(5) {
-                                border-bottom: 0;
-                                figcaption {
-                                    background-position-y: -388px;
-                                }
-                            }
-                            &:last-child {
-                                border: 0;
-                                figcaption {
-                                    background-position-y: -462px;
-                                }
-                            }
-                            ul {
-                                overflow: hidden;
-                                li {
-                                    float: left;
-                                    padding: 6px 12px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        p {
-            float: right;
-            height: 38px;
-            a {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                margin-right: 15px;
-                margin-top: 4px;
-                &:first-child {
-                    background: url(../images/z_01new.jpg);
-                }
-                &:nth-child(2) {
-                    background: url(../images/z02.jpg);
-                }
-                &:last-child {
-                    background: url(../images/z03.jpg);
-                }
+            >li:nth-of-type(1) {
+                background: $color;
             }
         }
     }
@@ -481,6 +110,16 @@ section {
             height: 340px;
             position: relative;
             background: #fff;
+            >p {
+                width: 40px;
+                padding: 40px;
+                position: absolute;
+                overflow: hidden;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background: url(../images/new_haitao_icon.jpg)no-repeat;
+            }
             .bg {
                 cursor: pointer;
                 .dan {
@@ -540,7 +179,9 @@ section {
                     span {
                         color: $color;
                     }
-                    color: #767676;
+                    a {
+                        color: #767676;
+                    }
                 }
                 .buy {
                     height: 36px;
@@ -616,6 +257,16 @@ section {
                     }
                 }
                 a {
+                    i {
+                        width: 40px;
+                        padding: 40px;
+                        position: absolute;
+                        overflow: hidden;
+                        z-index: 1;
+                        top: 10px;
+                        left: 10px;
+                        background: url(../images/new_haitao_icon.jpg)no-repeat;
+                    }
                     img {
                         width: 330px;
                         height: 330px;
@@ -663,6 +314,7 @@ section {
                                 background: $color;
                                 color: #fff;
                                 float: right;
+                                cursor: pointer;
                             }
                             div {
                                 height: 30px;
@@ -770,6 +422,7 @@ section {
     left: 74px;
     background: #fff;
     font-size: 12px;
+    display: none;
     dt {
         width: 60px;
         height: 62px;
@@ -780,7 +433,8 @@ section {
             display: block;
         }
     }
-    dd {vertical-align: bottom;
+    dd {
+        vertical-align: bottom;
         color: #8e8e8e;
         width: 60px;
         height: 62px;

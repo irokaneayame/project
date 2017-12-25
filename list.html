@@ -1,9 +1,636 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/list.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
+		<header>
+			<div>
+				<p>欢迎来到聚美！<span>请登录</span><span>快速注册</span></p>
+				<ul id="nav">
+					<li>
+						<a href="">正品保证</a>
+					</li>
+					<li>
+						<a href="">订单查询</a>
+					</li>
+					<li><i></i>
+						<a href="">收藏的品牌</a>
+					</li>
+					<li class="xiala">
+						<b></b>
+						<a href="">我的聚美</a>
+						<ul>
+							<li>
+								<a href="">我的订单</a>
+							</li>
+							<li>
+								<a href="">我的现金券</a>
+							</li>
+							<li>
+								<a href="">我的红包</a>
+							</li>
+							<li>
+								<a href="">我的余额</a>
+							</li>
+							<li>
+								<a href="">我的提现退款</a>
+							</li>
+							<li>
+								<a href="">我的收藏</a>
+							</li>
+							<li>
+								<a href="">我的心愿单</a>
+							</li>
+							<li>
+								<a href="">会员中心</a>
+							</li>
+							<li>
+								<a href="">礼品卡兑换</a>
+							</li>
+						</ul>
+					</li>
+					<li><i></i>
+						<a href="">手机聚美</a>
+					</li>
+					<li class="xiala">
+						<b></b>
+						<a href="">更多</a>
+						<ul>
+							<li>
+								<a href="">邀请好友</a>
+							</li>
+							<li>
+								<a href="">加入微博</a>
+							</li>
+							<li>
+								<a href="">新浪微博</a>
+							</li>
+							<li>
+								<a href="">聚美微信</a>
+							</li>
+							<li>
+								<a href="">百度贴吧</a>
+							</li>
+							<li>
+								<a href="">腾讯微博</a>
+							</li>
+							<li>
+								<a href="">人人公众主页</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div id="top">
+			<h1><img src="images/logo_new_v1.jpg"></h1>
+			<form>
+				<input type="text" id="txt">
+				<input type="button" id="btn" value="搜索" />
+				<p>
+					<a href="">保湿</a>
+					<a href="">面膜</a>
+					<a href="">洗面奶</a>
+					<a href="">补水</a>
+					<a href="">香水</a>
+					<a href="">眼霜</a>
+					<a href="">口红</a>
+					<a href="">护肤套装</a>
+					<a href="">BB霜</a>
+				</p>
+			</form>
+			<div id="cart">
+				<div>
+					<i></i>
+					<span>去购物车结算</span>
+					<b></b>
+				</div>
+				<div class="lan">购物车中还没有商品，快去挑选心爱的商品吧</div>
+			</div>
+		</div>
+		<nav>
+			<div>
+				<ul>
+					<li>
+						<div>
+							<a href="">首页</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="">极速免税店</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="">母婴特卖</a>
+						</div>
+					</li>
+					<li class="navList">
+						<div>
+							<a href="">美妆商城</a>
+							<b></b>
+						</div>
+						<div class="list">
+							<div class="left">
+								<a href=""><img src="images/30573_254_135_003-web.jpg"></a>
+								<a href=""><img src="images/30573_254_135_005-web.jpg"></a>
+							</div>
+							<div class="right">
+								<figure>
+									<figcaption>国际大牌</figcaption>
+									<ul>
+										<li>
+											<a href="">兰蔻</a>
+										</li>
+										<li>
+											<a href="">好雅诗</a>
+										</li>
+										<li>
+											<a href="">兰蔻傻逼啊雅</a>
+										</li>
+										<li>
+											<a href="">压实兰蔻</a>
+										</li>
+										<li>
+											<a href="">欧兰蔻</a>
+										</li>
+										<li>
+											<a href="">兰蔻</a>
+										</li>
+										<li>
+											<a href="">sk-ii</a>
+										</li>
+										<li>
+											<a href="">兰蔻</a>
+										</li>
+										<li>
+											<a href="">兰死神蔻</a>
+										</li>
+										<li>
+											<a href="">兰风铃蔻</a>
+										</li>
+									</ul>
+								</figure>
+								<figure>
+									<figcaption>护符</figcaption>
+									<ul>
+										<li>兰蔻</li>
+										<li>好雅诗</li>
+										<li>兰蔻傻逼啊雅</li>
+										<li>压实兰蔻</li>
+										<li>欧兰蔻</li>
+										<li>兰蔻</li>
+										<li>sk-ii</li>
+										<li>兰蔻</li>
+										<li>兰死神蔻</li>
+										<li>兰风铃蔻</li>
+									</ul>
+								</figure>
+								<figure>
+									<figcaption>彩妆</figcaption>
+									<ul>
+										<li>兰蔻</li>
+										<li>好雅诗</li>
+										<li>兰蔻傻逼啊雅</li>
+										<li>压实兰蔻</li>
+										<li>欧兰蔻</li>
+										<li>兰蔻</li>
+										<li>sk-ii</li>
+										<li>兰蔻</li>
+										<li>兰死神蔻</li>
+										<li>兰风铃蔻</li>
+									</ul>
+								</figure>
+								<figure>
+									<figcaption>香氛</figcaption>
+									<ul>
+										<li>兰蔻</li>
+										<li>好雅诗</li>
+										<li>兰蔻傻逼啊雅</li>
+										<li>压实兰蔻</li>
+										<li>欧兰蔻</li>
+										<li>兰蔻</li>
+										<li>sk-ii</li>
+										<li>兰蔻</li>
+										<li>兰死神蔻</li>
+										<li>兰风铃蔻</li>
+									</ul>
+								</figure>
+								<figure>
+									<figcaption>你那是赚取</figcaption>
+									<ul>
+										<li>兰蔻</li>
+										<li>好雅诗</li>
+										<li>兰蔻傻逼啊雅</li>
+										<li>压实兰蔻</li>
+										<li>欧兰蔻</li>
+										<li>兰蔻</li>
+										<li>sk-ii</li>
+										<li>兰蔻</li>
+										<li>兰死神蔻</li>
+										<li>兰风铃蔻</li>
+									</ul>
+								</figure>
+								<figure>
+									<figcaption>热门搜索</figcaption>
+									<ul>
+										<li>兰蔻</li>
+										<li>好雅诗</li>
+										<li>兰蔻傻逼啊雅</li>
+										<li>压实兰蔻</li>
+										<li>欧兰蔻</li>
+										<li>兰蔻</li>
+										<li>sk-ii</li>
+										<li>兰蔻</li>
+										<li>兰死神蔻</li>
+										<li>兰风铃蔻</li>
+									</ul>
+								</figure>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="">服装运动</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="">鞋包配饰</a>
+						</div>
+					</li>
+					<li class="xiala">
+						<div>
+							<a href="">正品保证</a>
+							<b></b>
+						</div>
+						<ul>
+							<li>
+								<a href="">在美上市</a>
+							</li>
+							<li>
+								<a href="">品牌防伪码</a>
+							</li>
+							<li>
+								<a href="">无理由退货</a>
+							</li>
+							<li>
+								<a href="">色谱检测</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+			<p>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+			</p>
+			</div>
+		</nav>
+		<div id="navright">
+			<ul class="fixt">
+				<li>
+					<a href=""><i></i></a>
+					<div><span class="close"></span><b></b></div>
+				</li>
+				<li><i></i>
+					<p>购物车</p><span>0</span></li>
+				<li>
+					<a href=""><i></i></a>
+					<div>我的财产<b></b></div>
+				</li>
+				<li>
+					<a href=""><i></i></a>
+					<div>我的心愿单<b></b></div>
+				</li>
+				<li>
+					<a href=""><i></i></a>
+					<div>我看过的<b></b></div>
+				</li>
+			</ul>
+
+			<ul class="fixb">
+				<li>
+					<a href=""><i></i></a>
+					<div>
+						<p>手机上聚美购物更优惠</p><b></b></div>
+				</li>
+				<li>
+					<a href=""><i></i></a>
+					<div>客服中心<b></b></div>
+				</li>
+				<li>
+					<i></i>
+					<div>返回顶部<b></b></div>
+				</li>
+			</ul>
+		</div>
+		<div class="lan">
+			<span class="close"></span>
+		</div>
+		<section>
+			<div id="cont">
+				<figure>
+					<figcaption>
+						<p>首页></p>
+						<input type="text" value="洗面奶" />
+					</figcaption>
+					<p>在<span>洗面奶</span>中筛选</p>
+					<div class="topbox">
+						<div class="shang">
+							<div class="left">品牌：</div>
+							<div class="right">
+								<ul>
+									<li><span>Beauty</span></li>
+									<li><span>Buffet</span></li>
+									<li><span>AHC</span></li>
+									<li><span>ROSETTE</span></li>
+									<li><span>悦诗风吟</span></li>
+									<li><span>资生堂</span></li>
+									<li><span>美国Elta</span></li>
+									<li><span>MD</span></li>
+									<li><span>伊思</span></li>
+									<li><span>菲诗小铺</span></li>
+									<li><span>欧莱雅</span></li>
+									<li><span>御泥坊</span></li>
+									<li><span>雅诗兰黛</span></li>
+									<li><span>Byphasse</span></li>
+									<li><span>芙丽芳丝</span></li>
+									<li><span>花印</span></li>
+									<li><span>珀莱雅</span></li>
+									<li><span>相宜本草</span></li>
+									<li><span>姬芮</span></li>
+									<li><span>碧柔</span></li>
+									<li><span>曼秀雷敦</span></li>
+									<li><span>韩束</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="shang">
+							<div class="left">分类：</div>
+							<div class="right"></div>
+						</div>
+						<div class="shang">
+							<div class="left">功效：</div>
+							<div class="right"></div>
+						</div>
+						<div class="shang">
+							<div class="left">价格：</div>
+							<div class="right"></div>
+						</div>
+					</div>
+				</figure>
+				<figure>
+					<figcaption>
+						<ul id="xuan">
+							<li>排序：</li>
+							<li class="hover"><span>默认</span><i></i></li>
+							<li><span>价格</span><i></i></li>
+							<li><span>销量</span><i></i></li>
+							<li><span>人气</span><i></i></li>
+							<li><span>上架时间</span><i></i></li>
+						</ul>
+						<div>
+							<p>共<span class="datanum">1924</span>个商品</p>
+							<p><span class="datapage">1</span>/<span class="dataallpage">54</span></p><i>上一页</i><i>下一页</i></div>
+					</figcaption>
+					<ul>
+						<li>
+							<div>
+								<a href=""><img src="images/2445486_dx_1500_400.jpg" /></a>
+								<p>
+									<a href="">BeautyBuffet牛奶洗面奶100ml</a>
+								</p>
+								<p><span>￥29.9</span><span>￥39.9</span></p>
+								<b>月销1000笔</b>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="images/2445486_dx_1500_400.jpg" /></a>
+								<p>
+									<a href="">BeautyBuffet牛奶洗面奶100ml</a>
+								</p>
+								<p><span>￥29.9</span><span>￥39.9</span></p>
+								<b>月销1000笔</b>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="images/2445486_dx_1500_400.jpg" /></a>
+								<p>
+									<a href="">BeautyBuffet牛奶洗面奶100ml</a>
+								</p>
+								<p><span>￥29.9</span><span>￥39.9</span></p>
+								<b>月销1000笔</b>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="images/2445486_dx_1500_400.jpg" /></a>
+								<p>
+									<a href="">BeautyBuffet牛奶洗面奶100ml</a>
+								</p>
+								<p><span>￥29.9</span><span>￥39.9</span></p>
+								<b>月销1000笔</b>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="images/2445486_dx_1500_400.jpg" /></a>
+								<p>
+									<a href="">BeautyBuffet牛奶洗面奶100ml</a>
+								</p>
+								<p><span>￥29.9</span><span>￥39.9</span></p>
+								<b>月销1000笔</b>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="images/2445486_dx_1500_400.jpg" /></a>
+								<p>
+									<a href="">BeautyBuffet牛奶洗面奶100ml</a>
+								</p>
+								<p><span>￥29.9</span><span>￥39.9</span></p>
+								<b>月销1000笔</b>
+								<em></em>
+							</div>
+						</li>
+					</ul>
+					<p><i>上一页</i><span><i>1</i><i>2</i></span><i>下一页</i></p>
+				</figure>
+				<figure>
+					<span>搜索全部</span>
+					<form>
+						<input type="text" value="洗面奶" />
+						<i></i>
+						<p>在口碑商城搜索</p>
+					</form>
+				</figure>
+				<figure>
+					<figcaption>您最近查看的商品RECENTLY VIEWD ITEMS</figcaption>
+					<div></div>
+				</figure>
+			</div>
+		</section>
+		<div id="service">
+			<div id="servicelink">
+				<ul>
+					<li>
+						<a href=""><i></i><span>值得信赖美妆电商</span><b>四千万用户信赖</b></a>
+					</li>
+					<li>
+						<a href=""><i></i><span>成功在美上市</span><b>股票代码NYSE.JMEI</b></a>
+					</li>
+					<li>
+						<a href=""><i></i><span>品牌防伪码</span><b>支持品牌官网验真</b></a>
+					</li>
+					<li>
+						<a href=""><i></i><span>30天无理由退货</span><b>只要不满意无理由退货</b></a>
+					</li>
+					<li>
+						<a href=""><i></i><span>百万用户口碑</span><b>帮你只选对的不选贵的</b></a>
+					</li>
+					<li>
+						<a href=""><i></i><span>订单闪电发货</span><b>1.5小时订单急速出库</b></a>
+					</li>
+					<li>
+						<a href=""><i></i><span>大牌明星热荐</span><b>打造极致明星脸</b></a>
+					</li>
+				</ul>
+				<div id="serviceLeft">
+					<dl>
+						<dt>服务保障</dt>
+						<dd>
+							<a href="">品牌真品防伪码</a>
+						</dd>
+						<dd>
+							<a href="">正品保证</a>
+						</dd>
+						<dd>
+							<a href="">30天无条件退货</a>
+						</dd>
+						<dd>
+							<a href="">7*24小时客服服务</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>使用帮助</dt>
+						<dd>
+							<a href="">新手指南</a>
+						</dd>
+						<dd>
+							<a href="">常见问题</a>
+						</dd>
+						<dd>
+							<a href="">帮助中心</a>
+						</dd>
+						<dd>
+							<a href="">用户协议</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>
+							<a href="">货到付款</a>
+						</dd>
+						<dd>
+							<a href="">在线支付</a>
+						</dd>
+						<dd>
+							<a href="">余额支付</a>
+						</dd>
+						<dd>
+							<a href="">现金券支付</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送方式</dt>
+						<dd>
+							<a href="">包邮政策</a>
+						</dd>
+						<dd>
+							<a href="">配送说明</a>
+						</dd>
+						<dd>
+							<a href="">运营说明</a>
+						</dd>
+						<dd>
+							<a href="">验货签收</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a href="">正品承诺</a>
+						</dd>
+						<dd>
+							<a href="">售后咨询</a>
+						</dd>
+						<dd>
+							<a href="">退货政策</a>
+						</dd>
+						<dd>
+							<a href="">退货办理</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="serviceRight">
+					<dl>
+						<dt>手机聚美</dt>
+						<dd><img src="images/qq_er.png" /></dd>
+						<dd>下载移动客户端</dd>
+					</dl>
+					<dl>
+						<dt>聚美微信</dt>
+						<dd><img src="images/jumei_weixin_header1.png" /></dd>
+						<dd>聚美官方微信</dd>
+					</dl>
+				</div>
+				<p>总裁邮箱ceo@jumer.com</p>
+			</div>
+		</div>
+		<footer>
+			<div id="footer_top">
+				<div>
+					<a href="">关于聚美优品</a>
+					<a href="">INVESTOR RELATIONS</a>
+					<a href="">合作招商</a>
+					<a href="">获取更新</a>
+					<a href="">加入聚美</a>
+					<a href="">品牌合作专区</a>
+					<a href="">网站联盟</a>
+					<a href="">媒体报道</a>
+					<a href="">商务合作</a>
+				</div>
+			</div>
+			<div id="footer_bottom">
+				<div>
+					<p>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888
+					</p>
+					<p>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</p>
+					<p><img src="images/footer_btm_icon.png" /></p>
+				</div>
+			</div>
+		</footer>
 	</body>
+
 </html>
