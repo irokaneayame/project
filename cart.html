@@ -1,9 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" href="css/cart.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
+		<header>
+			<div>
+				<h1>
+					<a href="index.html"><img src="images/logo_new_v1.jpg"/></a>					
+					<div><span>400-123-8888</span>
+					<p>大促期间客服24小时在线</p></div>
+				</h1>
+				<div>
+					<p>聚美优品欢迎您，
+						<a href="">登录</a> |
+						<a href="">免费注册</a>
+					</p>
+					<div></div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div id="content">
+				<div class="kong">
+					<img src="images/empty_icon.jpg" />
+					<div>
+						<p>您的购物车中没有商品，请先去挑选心爱的商品吧！</p>
+						<p>您可以
+							<a href="index.html">返回首页</a> 挑选喜欢的商品,或者</p>
+						<div><input type="text" placeholder="搜索您想要的商品" /><em></em></div>
+					</div>
+				</div>
+				<div class="shop">
+					<div class="tp">
+						<div class="lf">
+							<p><i></i>请在 <span>17分07秒</span> 内去结账，并在下单后 20 分钟内完成支付 [ <span>?</span> ]</p>
+							<p><i>包邮</i>新用户首单满39元包邮,自营非食品类满两件或满299元包邮</p>
+						</div>
+						<div class="ri">
+							<p><i></i><span>真品防伪码</span><i></i><span>30天无条件退货</span><i></i><span>美妆满2件或299元包邮</span></p>
+						</div>
+					</div>
+					<figure>
+						<figcaption>
+							<span><input type="checkbox" />聚美优品发货</span>
+							<span>聚美价（元）</span>
+							<span>数量</span>
+							<span>小计（元）</span>
+							<span>操作</span>
+						</figcaption>
+						<ul id="buylist">
+							<li>
+								<p><input type="checkbox" /><img src="images/1308285_dx_1500_400.jpg"/><a href="">资生堂洗颜专科泡沫洗面奶120g</a></p>
+								<p><span>98</span><span>228</span></p>
+								<p><span class="jian">-</span><input type="text" class="txt" value="1"><span class="jia">+</span></p>
+								<p><span>98</span><span>省130元</span></p>
+								<p><i></i></p>
+							</li>
+						</ul>
+						<div>商品金额：<span class="money">￥98</span></div>
+					</figure>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>© 2013 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 </p>
+			<p>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</p>
+			<img src="images/footer_btm_icon.png" />
+		</footer>
 	</body>
+
 </html>

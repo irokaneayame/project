@@ -317,8 +317,137 @@ section {
                     line-height: 40px;
                     text-indent: 20px;
                 }
-                div {
-                    height: 363px;
+                .lishi {
+                    padding: 15px;
+                    >div {
+                        h4 {
+                            height: 30px;
+                            background: #eee;
+                            color: #666;
+                            text-indent: 12px;
+                            line-height: 30px;
+                            font-weight: bold;
+                        }
+                        >div {
+                            border: 1px solid #eee;
+                        }
+                    }
+                    .zuo {
+                        width: 242px;
+                        height: 333px;
+                        float: left;
+                        h4 {
+                            width: 242px;
+                        }
+                        >div {
+                            width: 240px;
+                            height: 301px;
+                            ul {
+                                height: 301px;
+                                padding-left: 20px;
+                                overflow-y: auto;
+                                li {
+                                    width: 200px;
+                                    height: 99px;
+                                    border-bottom: 1px solid #eee;
+                                    a {
+                                        float: left;
+                                        img {
+                                            margin-top: 20px;
+                                            width: 60px;
+                                            height: 60px;
+                                            margin-right: 15px;
+                                        }
+                                    }
+                                    div {
+                                        width: 125px;
+                                        float: left;
+                                        >a {
+                                            margin-top: 14px;
+                                            line-height: 18px;
+                                            color: #323232;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        p {
+                                            color: $color;
+                                            line-height: 24px;
+                                        }
+                                        span {
+                                            color: #999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        float: right;
+                        width: 817px;
+                        height: 331px;
+                        h4 {
+                            width: 817px;
+                        }
+                        >div {
+                            width: 815px;
+                            height: 300px;
+                            overflow: hidden;
+                            position: relative;
+                            i {
+                                position: absolute;
+                                cursor: pointer;
+                                width: 25px;
+                                height: 50px;
+                                opacity: .3;
+                                top: 45%;
+                                background: #000;
+                                display: block;
+                                filter: alpha(opacity=30);
+                                color: #fff;
+                                z-index: 100;
+                                text-align: center;
+                                font: 700 24px \5b8b\4f53, Hei;
+                                line-height: 50px;
+                                &:first-child {
+                                    left: 0;
+                                }
+                                &:last-child {
+                                    right: 0;
+                                }
+                            }
+                            ul {
+                                padding-top: 23px;
+                                position: relative;
+                                li {
+                                    width: 175px;
+                                    float: left;
+                                    margin-left: 23px;
+                                    a {
+                                        width: 175px;
+                                        display: block;
+                                        img {
+                                            width: 175px;
+                                            height: 175px;
+                                        }
+                                        line-height: 18px;
+                                        color: #323232;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    p {
+                                        color: $color;
+                                        line-height: 24px;
+                                        font-weight: bold;
+                                    }
+                                    span {
+                                        color: #999;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
